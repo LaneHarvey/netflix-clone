@@ -11,17 +11,17 @@ var massiveInstance = massive.connectSync({connectionString : connectionString})
 
 app.set('db', massiveInstance);
 
-// var db = app.get('db');
+var db = app.get('db');
 
 app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static('../public'));
 
-var mainCtrl = require('./controllers/mainCtrl');
+var browseCtrl = require('./controllers/mainCtrl');
 
 
 
-var port = 9001;
+var port = 3000;
 app.listen(port, function(){
   console.log("It's working on ", port);
 });

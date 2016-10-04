@@ -1,7 +1,9 @@
-angular.module('app', ['ai-router'])
+angular.module('app', ['ui-router'])
 .config(function($stateProvider, $urlRouterProvider) {
 $urlRouterProvider.otherwise('/');
 $stateProvider
-.state('', {
-})
-})
+.state('./signup', {
+  url: "/",
+  templateUrl: "../views/signUp.html"
+});
+});
