@@ -8,7 +8,7 @@ var FacebookStrategy = require('passport-facebook').Strategy;
 var config = require('./config.js');
 var cors = require('cors');
 var connectionString = "postgres://postgres:@localhost/netflix-clone";
-var browseCtrl = require('./controllers/mainCtrl');
+var homeCtrl = require('./public/js/controllers/homeCtrl');
 
 
 var app = express();

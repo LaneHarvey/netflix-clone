@@ -1,5 +1,4 @@
-angular.module('app')
-.controller('homeController', function($scope, userService, $state) {
+angular.module('app').controller('homeCtrl', function($scope, userService, $state) {
 
 
   function getUser() {
