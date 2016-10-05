@@ -5,10 +5,10 @@ var massive = require('massive');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var FacebookStrategy = require('passport-facebook').Strategy;
+var NetflixRoulette = require('netflix-roulette');
 var config = require('./config.js');
 var cors = require('cors');
 var connectionString = "postgres://postgres:@localhost/netflix-clone";
-var homeCtrl = require('./public/js/controllers/homeCtrl');
 
 
 var app = express();
@@ -18,7 +18,6 @@ var massiveInstance = massive.connectSync({connectionString : connectionString})
 
 app.set('db', massiveInstance);
 
-var db = app.get('db');
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -33,6 +32,9 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use(express.static('../public'));
+
+var mainCtrl = require('./controllers/mainCtrl');
+
 
 passport.use(new LocalStrategy(
   function(username, password, done) {

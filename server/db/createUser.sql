@@ -1,1 +1,1 @@
-insert into users (username, password) values ('asbrettisay', 'bingo');
+insert into users (username, password) values ('LaneHarvey', 'Django');

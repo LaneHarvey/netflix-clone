@@ -4,7 +4,7 @@ $urlRouterProvider.otherwise('/');
 $stateProvider
     .state('home', {
       url: '/',
-      controller: 'controllers/homeCtrl',
+      controller: 'homeCtrl',
       templateUrl: '../views/home.html'
     });
 });
