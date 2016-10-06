@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://www.onlinewebfonts.com/download/ab83b275830b2d585ea027c47e3b237a///db.onlinewebfonts.com/c/ab83b275830b2d585ea027c47e3b237a?family=GraphiqueW01-Regular");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -44,3 +45,25 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+body {
+  background-image: url("http://www.followingthenerd.com/site/wp-content/uploads/daredevil-red.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: columns; }
+
+span {
+  font-size: 8em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  display: block;
+  color: #ef3525; }
+
+.logo {
+  perspective: 1000px;
+  perspective-origin: 50% 0; }
+  .logo span {
+    transform-origin: 0 0;
+    transform: scaleX(80) rotateY(89.5deg); }

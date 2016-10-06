@@ -4,14 +4,18 @@ $urlRouterProvider.otherwise('/');
 $stateProvider
     .state('home', {
       url: '/',
-      controller: 'controllers/',
-      templateUrl: './views/home.html'
+      controller: 'homeCtrl',
+      templateUrl: '../views/home.html'
     });
 });
 
+angular.module('app').controller('browseCtrl', function($scope) {
 
-angular.module('app')
-.controller('homeController', function($scope, userService, $state) {
+  $scope.test = "working";
+
+})
+
+angular.module('app').controller('homeCtrl', function($scope, userService, $state) {
 
 
   function getUser() {
@@ -45,6 +49,11 @@ angular.module('app').controller('loginCtrl', function($scope) {
 
 })
 
+angular.module('app').controller('profileCtrl', function($scope) {
+
+  $scope.test = "working";
+
+})
 
 angular.module('app')
 .service('userService', function($http) {
