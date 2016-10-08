@@ -10,8 +10,8 @@
 
     <main>
 
-      <h1>
-        <div class="logo">
+
+        <div class="logo" style="float:left;">
           <span>G</span>
           <span>E</span>
           <span>T</span>
@@ -20,9 +20,24 @@
           <span>I</span>
           <span>X</span>
         </div>
-      </h1>
-      {{test}}
-      <button ui-sref="home" type="button" name="button">HOME</button>
+        <br>
+
+  <form>
+    <div class="container">
+      <label><b>Email</b></label>
+      <input type="text" placeholder="" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="" name="psw" required>
+      <input type="checkbox" checked="checked"> Remember me on this device.
+
+      <button type="submit">Login</button>
+    </div>
+
+    <div class="container">
+      <div class="link">New to Getlix? <a ui-sref="signup">Sign up now</a></div>
+    </div>
+  </form>
 
       <ui-view></ui-view>
     </main>
