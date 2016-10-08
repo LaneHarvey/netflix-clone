@@ -1,4 +1,4 @@
-angular.module("getflix").service("settingsService", function($http) {
+angular.module("nodeTodo").service("settingsService", function($http) {
 
 
 
