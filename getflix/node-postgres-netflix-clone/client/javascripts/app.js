@@ -1,4 +1,4 @@
-angular.module('nodeTodo', [])
+angular.module('getflix', [])
 .controller('mainController', ($scope, $http) => {
   $scope.formData = {};
   $scope.todoData = {};

@@ -1,5 +1,5 @@
 const pg = require('pg');
-const connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/netflix-clone';
+const connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/getflix';
 
 const client = new pg.Client(connectionString);
 client.connect();

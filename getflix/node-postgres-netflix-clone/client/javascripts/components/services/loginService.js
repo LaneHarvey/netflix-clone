@@ -1,4 +1,4 @@
-angular.module("nodeTodo").service("loginService", function($http) {
+angular.module("getflix").service("loginService", function($http) {
 
 this.userSignUp = function(){
     return $http({
