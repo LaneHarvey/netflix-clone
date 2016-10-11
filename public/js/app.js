@@ -1,10 +1,10 @@
-angular.module('app', ['ui-router'])
+angular.module('app', ['ui.router'])
 .config(function($stateProvider, $urlRouterProvider) {
 $urlRouterProvider.otherwise('/');
 $stateProvider
     .state('home', {
       url: '/',
-      controller: 'homeCtrl',
+      // controller: 'homeCtrl',
       templateUrl: '../views/home.html'
     })
     .state('browse', {
@@ -16,5 +16,5 @@ $stateProvider
       url: '/login',
       controller: 'loginCtrl',
       templateUrl: '../views/login.html'
-    })
+    });
 });

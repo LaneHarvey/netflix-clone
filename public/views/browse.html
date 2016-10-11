@@ -1,12 +1,47 @@
 <!DOCTYPE html>
-<html ng-app="app">
+
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Getflix</title>
   </head>
   <body>
+    <ul>
+      <li class="dropdown"><a href="#" class="dropbtn">{{user}}</a>
+        <div class="dropdown-content">
+          <a href="#">Manage profiles</a>
+          <a href="#">Your Account</a>
+          <a href="#">Sign out of Getflix</a>
+        </div>
+      </li>
+      <li><a href="#home">Notifications</a></li>
+      <li><a href="#search">Search</a></li>
+      <li style="float:left"><a href="#search">Logo</a></li>
+      <li style="float:left" class="dropdown"><a href="#" class="dropbtn">Browse</a>
+        <div class="dropdown-content">
+          <a href="#">Home</a>
+          <a href="#">My List</a>
+          <a href="#">Originals</a>
+          <a href="#">New Arrivals</a>
+        </div>
+      </li>
+      <li style="float:left"><a href="#search">Kids</a></li>
+      <li style="float:left"><a href="#search">DVD</a></li>
 
-    <ui-view></ui-view>
+    </ul>
+
+    <p>My List</p>
+    <p>GETFLIX ORIGINALS</p>
+    <p>Trending now</p>
+    <p>Continue Watching for {{user}}</p>
+    <p>Popular on Getflix</p>
+    <p>Because you watched</p>
+    <p>Recently added</p>
+    <p>{{genre}}</p>
+
+
+
+
+
+
 
   </body>
-</html>
