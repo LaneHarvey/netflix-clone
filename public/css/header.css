@@ -1,0 +1,200 @@
+header {
+  font-family: arial,​helvetica,sans-serif;
+  right: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.701961);
+  -webkit-box-shadow: 0 1px 6px black;
+  -moz-box-shadow: 0 1px 6px black;
+  box-shadow: 0 1px 6px black;
+  min-height: inherit;
+  font-size: 13px;
+  z-index: 100;
+  padding: 15px 10px 0 18px;
+}
+header .logo {
+  display: block;
+  float: left;
+}
+header .sign-in-links {
+  float: right;
+  text-align: right;
+  position: relative;
+}
+header .member-sign-in {
+  background-color: #6F0604;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 12px;
+  outline: 0;
+  padding: 5px 20px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+header .member-sign-in:hover {
+  text-decoration: underline;
+}
+header #login {
+  box-shadow: 1px 1px 3px #999;
+  background: #fff;
+  top: 56px;
+  text-align: left;
+  position: absolute;
+  top: -9999px;
+  right: -10px;
+}
+header #login.show-login-box {
+  top: auto;
+}
+header #login .top-arrow {
+  left: 180px;
+  position: absolute;
+  top: -10px;
+}
+header #login #loginForm {
+  padding: 15px 30px;
+  width: 230px;
+}
+header #login .row {
+  color: #333;
+  padding-bottom: 15px;
+}
+header #login .row label {
+  font-size: 14px;
+  padding-bottom: 2px;
+}
+header #login .row .form-input {
+  display: block;
+  width: 97%;
+  height: 28px;
+}
+header #login .row a {
+  color: #0099FF;
+  font-size: 12px;
+  text-decoration: none;
+}
+header #login .row #forgotPassword {
+  float: right;
+  font-size: 11px;
+  margin-right: 5px;
+}
+header #login .row.remember-me {
+  font-size: 12px;
+}
+header #login .row.remember-me label {
+  font-size: 12px;
+}
+header #login .row.remember-me input {
+  margin-right: 5px;
+}
+header #login .row #loginBtn {
+  background: #eaeaea;
+  /* Old browsers */
+
+  background: -moz-linear-gradient(top, #eaeaea 0%, #e0e0e0 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eaeaea), color-stop(100%, #e0e0e0));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, #eaeaea 0%, #e0e0e0 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, #eaeaea 0%, #e0e0e0 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, #eaeaea 0%, #e0e0e0 100%);
+  /* IE10+ */
+
+  background: linear-gradient(to bottom, #eaeaea 0%, #e0e0e0 100%);
+  /* W3C */
+
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#e0e0e0',GradientType=0 );
+  /* IE6-9 */
+
+  border: 1px solid #aeaeae;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px 30px 7px;
+}
+header #login .row #loginBtn:hover {
+  background: #ffffff;
+  /* Old browsers */
+
+  background: -moz-linear-gradient(top, #ffffff 0%, #eaeaea 4%, #eaeaea 95%, #bfbfbf 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(4%, #eaeaea), color-stop(95%, #eaeaea), color-stop(100%, #bfbfbf));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, #ffffff 0%, #eaeaea 4%, #eaeaea 95%, #bfbfbf 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, #ffffff 0%, #eaeaea 4%, #eaeaea 95%, #bfbfbf 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, #ffffff 0%, #eaeaea 4%, #eaeaea 95%, #bfbfbf 100%);
+  /* IE10+ */
+
+  background: linear-gradient(to bottom, #ffffff 0%, #eaeaea 4%, #eaeaea 95%, #bfbfbf 100%);
+  /* W3C */
+
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bfbfbf',GradientType=0 );
+  /* IE6-9 */
+
+  border: 1px solid #919191;
+  -webkit-box-shadow: 0 1px 4px #c8c8c8;
+  -moz-box-shadow: 0 1px 4px #c8c8c8;
+  box-shadow: 0 1px 4px #c8c8c8;
+}
+header #login .row #loginBtn:active {
+  background: #b5b5b5;
+  /* Old browsers */
+
+  background: -moz-linear-gradient(top, #b5b5b5 0%, #e5e5e5 9%, #e5e5e5 93%, #ffffff 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b5b5b5), color-stop(9%, #e5e5e5), color-stop(93%, #e5e5e5), color-stop(100%, #ffffff));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, #b5b5b5 0%, #e5e5e5 9%, #e5e5e5 93%, #ffffff 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, #b5b5b5 0%, #e5e5e5 9%, #e5e5e5 93%, #ffffff 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, #b5b5b5 0%, #e5e5e5 9%, #e5e5e5 93%, #ffffff 100%);
+  /* IE10+ */
+
+  background: linear-gradient(to bottom, #b5b5b5 0%, #e5e5e5 9%, #e5e5e5 93%, #ffffff 100%);
+  /* W3C */
+
+  filter: none;
+  border: 1px solid #999;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.padlock {
+  background: url('../images/padlock_small.png') no-repeat transparent;
+  display: inline-block;
+  font-size: 11px;
+  margin-left: 15px;
+  padding-left: 20px;
+  line-height: 1.9;
+}

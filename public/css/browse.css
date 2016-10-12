@@ -1,0 +1,1739 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline
+}
+
+ol,ul {
+    list-style: none
+}
+
+.has-inline-gutter {
+    padding-left: 60px;
+    padding-right: 60px
+}
+
+@media screen and (max-width: 500px) {
+    .has-inline-gutter {
+        padding-left:20px;
+        padding-right: 20px
+    }
+}
+
+.column-2 .has-inline-gutter {
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+.column-3 .has-inline-gutter,.column-4 .has-inline-gutter {
+    padding-left: 30px;
+    padding-right: 30px
+}
+
+@media screen and (min-width: 501px) and (max-width:800px) {
+    .has-inline-gutter {
+        padding-left:30px;
+        padding-right: 30px
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width:1100px) {
+    .has-inline-gutter {
+        padding-left:30px;
+        padding-right: 30px
+    }
+}
+
+.has-inline-left-gutter {
+    padding-left: 60px
+}
+
+@media screen and (max-width: 500px) {
+    .has-inline-left-gutter {
+        padding-left:20px
+    }
+}
+
+.column-2 .has-inline-left-gutter {
+    padding-left: 20px
+}
+
+.column-3 .has-inline-left-gutter,.column-4 .has-inline-left-gutter {
+    padding-left: 30px
+}
+
+@media screen and (min-width: 501px) and (max-width:800px) {
+    .has-inline-left-gutter {
+        padding-left:30px
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width:1100px) {
+    .has-inline-left-gutter {
+        padding-left:30px
+    }
+}
+
+.has-inline-left-gutter-border {
+    padding-left: 57px
+}
+
+@media screen and (max-width: 500px) {
+    .has-inline-left-gutter-border {
+        padding-left:17px
+    }
+}
+
+.column-2 .has-inline-left-gutter-border {
+    padding-left: 17px
+}
+
+.column-3 .has-inline-left-gutter-border,.column-4 .has-inline-left-gutter-border {
+    padding-left: 27px
+}
+
+.has-inline-right-gutter {
+    padding-right: 60px
+}
+
+@media screen and (max-width: 500px) {
+    .has-inline-right-gutter {
+        padding-right:20px
+    }
+}
+
+.column-2 .has-inline-right-gutter {
+    padding-right: 20px
+}
+
+.column-3 .has-inline-right-gutter,.column-4 .has-inline-right-gutter {
+    padding-right: 30px
+}
+
+.has-outline-gutter {
+    margin-left: 60px;
+    margin-right: 60px
+}
+
+@media screen and (max-width: 500px) {
+    .has-outline-gutter {
+        margin-left:20px;
+        margin-right: 20px
+    }
+}
+
+.column-2 .has-outline-gutter {
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+.column-3 .has-outline-gutter,.column-4 .has-outline-gutter {
+    margin-left: 30px;
+    margin-right: 30px
+}
+
+@media screen and (min-width: 501px) and (max-width:800px) {
+    .has-inline-left-gutter-border {
+        padding-left:27px
+    }
+
+    .has-inline-right-gutter {
+        padding-right: 30px
+    }
+
+    .has-outline-gutter {
+        margin-left: 30px;
+        margin-right: 30px
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width:1100px) {
+    .has-inline-left-gutter-border {
+        padding-left:27px
+    }
+
+    .has-inline-right-gutter {
+        padding-right: 30px
+    }
+
+    .has-outline-gutter {
+        margin-left: 30px;
+        margin-right: 30px
+    }
+}
+
+.has-outline-left-gutter {
+    margin-left: 60px
+}
+
+@media screen and (max-width: 500px) {
+    .has-outline-left-gutter {
+        margin-left:20px
+    }
+}
+
+.column-2 .has-outline-left-gutter {
+    margin-left: 20px
+}
+
+.column-3 .has-outline-left-gutter,.column-4 .has-outline-left-gutter {
+    margin-left: 30px
+}
+
+.has-outline-right-gutter {
+    margin-right: 60px
+}
+
+@media screen and (max-width: 500px) {
+    .has-outline-right-gutter {
+        margin-right:20px
+    }
+}
+
+.column-2 .has-outline-right-gutter {
+    margin-right: 20px
+}
+
+.column-3 .has-outline-right-gutter,.column-4 .has-outline-right-gutter {
+    margin-right: 30px
+}
+
+.is-gutter {
+    width: 60px
+}
+
+@media screen and (max-width: 500px) {
+    .is-gutter {
+        width:20px
+    }
+}
+
+.column-2 .is-gutter {
+    width: 20px
+}
+
+.column-3 .is-gutter,.column-4 .is-gutter {
+    width: 30px
+}
+
+@media screen and (min-width: 501px) and (max-width:800px) {
+    .has-outline-left-gutter {
+        margin-left:30px
+    }
+
+    .has-outline-right-gutter {
+        margin-right: 30px
+    }
+
+    .is-gutter {
+        width: 30px
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width:1100px) {
+    .has-outline-left-gutter {
+        margin-left:30px
+    }
+
+    .has-outline-right-gutter {
+        margin-right: 30px
+    }
+
+    .is-gutter {
+        width: 30px
+    }
+}
+
+body,html {
+    background: #141414;
+    color: #999;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1
+}
+
+.action-button,.secondary-button {
+    color: #fff;
+    padding: .57em 1.35em;
+    text-transform: uppercase;
+    font-weight: 700
+}
+
+a {
+    text-decoration: none
+}
+
+.action-button {
+    background: #e50914;
+    border: 1px solid #ff0a16
+}
+
+.action-button:hover {
+    background: #ff0a16
+}
+
+.action-button:active {
+    border: 1px solid #e50914
+}
+
+.secondary-button {
+    background: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/secondary_button_background.png);
+    border: 1px solid #999
+}
+
+.secondary-button:hover {
+    background: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/secondary_button_hover_background.png)
+}
+
+.secondary-button:active {
+    border: 1px solid #fff
+}
+
+.row-name {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 0 0 .5em
+}
+
+.body-view {
+    background: #141414
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    background: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/header_gradient.png) repeat-x;
+    position: fixed;
+    z-index: 4;
+    top: 0
+}
+
+.column-4 .header-netflix-logo,.column-5 .header-netflix-logo,.column-6 .header-netflix-logo {
+    width: 450px
+}
+
+.column-2 .header,.column-3 .header {
+    height: 50px
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        height:50px
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width:800px) {
+    .header {
+        height:50px
+    }
+}
+
+.show-browser-upgrade .header {
+    top: 120px
+}
+
+.header-scrolled {
+    background: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/secondary_button_hover_background.png);
+    background: rgba(0,0,0,.6)
+}
+
+.header-navigation-menu-open .header,.header-navigation-menu-open .header-scrolled {
+    background: #000
+}
+
+.kids .header,.kids .header-scrolled {
+    background: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/header_gradient_kids.png) repeat-x;
+    background: rgba(255,255,255,.6)
+}
+
+.header-item {
+    vertical-align: middle
+}
+
+@media screen and (min-width: 801px) and (max-width:1100px) {
+    .header-netflix-logo {
+        width:450px
+    }
+}
+
+@media screen and (min-width: 1101px) and (max-width:1400px) {
+    .header-netflix-logo {
+        width:450px
+    }
+}
+
+@media screen and (min-width: 1401px) and (max-width:1700px) {
+    .header-netflix-logo {
+        width:450px
+    }
+}
+
+.netflix-logo {
+    float: left;
+    width: 120px;
+    height: 34px;
+    position: relative
+}
+
+.column-2 .netflix-logo,.column-3 .netflix-logo {
+    width: 84px;
+    height: 24px
+}
+
+@media screen and (max-width: 500px) {
+    .netflix-logo {
+        width:84px;
+        height: 24px
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width:800px) {
+    .netflix-logo {
+        width:84px;
+        height: 24px
+    }
+}
+
+.netflix-logo-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 120px;
+    height: 34px
+}
+
+.column-2 .netflix-logo-image,.column-3 .netflix-logo-image {
+    width: 84px;
+    height: 24px
+}
+
+.header-navigation-trigger {
+    display: inline-block;
+    position: relative;
+    line-height: 2em;
+    margin: 0 1em;
+    padding: 0 1em;
+    color: #fff
+}
+
+.column-2 .header-dvd,.column-2 .header-kids-menu,.column-3 .header-dvd,.column-3 .header-kids-menu {
+    display: none
+}
+
+.header-navigation-trigger:visited {
+    color: #fff
+}
+
+.header-navigation-trigger:hover {
+    color: #ccc
+}
+
+.kids .header-navigation-trigger,.kids .header-navigation-trigger:hover,.kids .header-navigation-trigger:visited {
+    color: #4d4d4d
+}
+
+.header-kids-menu {
+    margin-right: 0
+}
+
+.kids .header-kids-menu {
+    margin-left: 2em;
+    font-weight: 700;
+    color: #e50914
+}
+
+.kids .header-kids-menu:hover,.kids .header-kids-menu:visited {
+    color: #e50914
+}
+
+@media screen and (max-width: 500px) {
+    .netflix-logo-image {
+        width:84px;
+        height: 24px
+    }
+
+    .header-dvd,.header-kids-menu {
+        display: none
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width:800px) {
+    .netflix-logo-image {
+        width:84px;
+        height: 24px
+    }
+
+    .header-dvd,.header-kids-menu {
+        display: none
+    }
+}
+
+.column-4 .header-navigation-menu,.column-5 .header-navigation-menu,.column-6 .header-navigation-menu,.column-7 .header-navigation-menu,.column-8 .header-navigation-menu {
+    display: none
+}
+
+.header-navigation-menu {
+    height: 24px;
+    float: left;
+    margin-right: 20px
+}
+
+@media screen and (min-width: 801px) and (max-width:1100px) {
+    .header-navigation-menu {
+        display:none
+    }
+}
+
+@media screen and (min-width: 1101px) and (max-width:1400px) {
+    .header-navigation-menu {
+        display:none
+    }
+}
+
+@media screen and (min-width: 1401px) and (max-width:1700px) {
+    .header-navigation-menu {
+        display:none
+    }
+}
+
+@media screen and (min-width: 1701px) and (max-width:2000px) {
+    .header-navigation-menu {
+        display:none
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .header-navigation-menu {
+        display:none
+    }
+}
+
+.netflix-header-more {
+    height: 31px
+}
+
+.column-2 .netflix-header-more,.column-3 .netflix-header-more {
+    height: 24px
+}
+
+.header-navigation-slider-background {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 70px;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,.4);
+    overflow: hidden
+}
+
+.column-2 .header-navigation-slider-background,.column-3 .header-navigation-slider-background {
+    top: 50px
+}
+
+@media screen and (max-width: 500px) {
+    .netflix-header-more {
+        height:24px
+    }
+
+    .header-navigation-slider-background {
+        top: 50px
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width:800px) {
+    .netflix-header-more {
+        height:24px
+    }
+
+    .header-navigation-slider-background {
+        top: 50px
+    }
+}
+
+.kids .header-navigation-slider-background {
+    background: rgba(255,255,255,.4)
+}
+
+.header-navigation-slider {
+    position: fixed;
+    left: -250px;
+    top: 70px;
+    bottom: 0;
+    width: 250px;
+    -webkit-transform: translateX(-250px);
+    -moz-transform: translateX(-250px);
+    -ms-transform: translateX(-250px);
+    -o-transform: translateX(-250px);
+    transform: translateX(-250px);
+    -webkit-transition: -webkit-transform 150ms cubic-bezier(.5,0,.1,1);
+    -moz-transition: -moz-transform 150ms cubic-bezier(.5,0,.1,1);
+    -o-transition: -o-transform 150ms cubic-bezier(.5,0,.1,1);
+    transition: transform 150ms cubic-bezier(.5,0,.1,1);
+    background: #000;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch
+}
+
+.column-2 .header-navigation-slider,.column-3 .header-navigation-slider {
+    top: 50px
+}
+
+@media screen and (max-width: 500px) {
+    .header-navigation-slider {
+        top:50px
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width:800px) {
+    .header-navigation-slider {
+        top:50px
+    }
+}
+
+.kids .header-navigation-slider {
+    background: #fff
+}
+
+.show-browser-upgrade .header-navigation-slider,.show-browser-upgrade .header-navigation-slider-background {
+    top: 190px
+}
+
+.column-2 .show-browser-upgrade .header-navigation-slider,.column-2 .show-browser-upgrade .header-navigation-slider-background,.column-3 .show-browser-upgrade .header-navigation-slider,.column-3 .show-browser-upgrade .header-navigation-slider-background {
+    top: 170px
+}
+
+@media screen and (max-width: 500px) {
+    .show-browser-upgrade .header-navigation-slider,.show-browser-upgrade .header-navigation-slider-background {
+        top:170px
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width:800px) {
+    .show-browser-upgrade .header-navigation-slider,.show-browser-upgrade .header-navigation-slider-background {
+        top:170px
+    }
+}
+
+.header-navigation-slider::-webkit-scrollbar {
+    display: none
+}
+
+.header-navigation-menu-open .header-navigation-slider {
+    left: 0;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0)
+}
+
+.header-navigation-menu-open .header-navigation-slider-background {
+    display: block
+}
+
+.navigation-menu-genres,.navigation-menu-sections,.navigation-menu-settings {
+    color: grey;
+    font-weight: 700
+}
+
+.navigation-menu-genres .nested-link-click,.navigation-menu-genres .nested-link-hover,.navigation-menu-sections .nested-link-click,.navigation-menu-sections .nested-link-hover,.navigation-menu-settings .nested-link-click,.navigation-menu-settings .nested-link-hover {
+    color: #fff
+}
+
+.kids .navigation-menu-genres,.kids .navigation-menu-sections,.kids .navigation-menu-settings {
+    color: #4d4d4d
+}
+
+.kids .navigation-menu-genres .nested-link-click,.kids .navigation-menu-genres .nested-link-hover,.kids .navigation-menu-sections .nested-link-click,.kids .navigation-menu-sections .nested-link-hover,.kids .navigation-menu-settings .nested-link-click,.kids .navigation-menu-settings .nested-link-hover {
+    color: #333
+}
+
+.navigation-menu-settings {
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+    margin-bottom: 5px
+}
+
+.navigation-menu-profile,.navigation-menu-setting {
+    margin-bottom: 10px
+}
+
+.navigation-menu-profile-link {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px
+}
+
+.navigation-menu-profile-name,.navigation-menu-profile-text {
+    display: block
+}
+
+.navigation-menu-profile-text {
+    font-weight: 400;
+    font-size: .7em;
+    text-transform: uppercase
+}
+
+.navigation-menu-genre,.navigation-menu-section {
+    font-weight: 700;
+    line-height: 2;
+    border-left: 3px solid #000
+}
+
+.kids .navigation-menu-genre,.kids .navigation-menu-section {
+    border-left: 3px solid #fff
+}
+
+.navigation-menu-genre-active,.navigation-menu-section-active {
+    color: #fff;
+    border-left: 3px solid #B9090B
+}
+
+.kids .navigation-menu-genre-active,.kids .navigation-menu-section-active {
+    color: #000;
+    border-left: 3px solid #B9090B
+}
+
+.column-2 .header-browse,.column-3 .header-browse {
+    display: none
+}
+
+.header-browse {
+    margin: 0 0 0 2em;
+    color: #e50914;
+    font-weight: 700
+}
+
+.header-browse:hover,.header-browse:visited {
+    color: #e50914
+}
+
+@media screen and (max-width: 500px) {
+    .header-browse {
+        display:none
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width:800px) {
+    .header-browse {
+        display:none
+    }
+}
+
+.kids .header-browse {
+    margin: 0 0 0 1em;
+    font-weight: 400
+}
+
+.header-browse.header-navigation-trigger-open .header-browse-menu,.header-browse:hover .header-browse-menu {
+    display: block
+}
+
+.header-browse-menu {
+    display: none;
+    position: absolute;
+    padding: 36px 1em .8em;
+    width: 100px;
+    left: 0;
+    background: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/browse_menu_background.png) -13px 0 no-repeat
+}
+
+.kids .header-browse-menu {
+    background: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/browse_menu_background_kids.png) -13px 0 no-repeat
+}
+
+.header-has-genres .header-browse-menu {
+    width: 716px
+}
+
+.browse-menu-sections {
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    width: 100px
+}
+
+.browse-menu-section {
+    color: #fff;
+    line-height: 1.5em;
+    font-size: .9em
+}
+
+.kids .browse-menu-section {
+    color: #333
+}
+
+.browse-menu-genres {
+    display: inline-block;
+    vertical-align: top;
+    width: 600px;
+    border-left: 1px solid #fff;
+    padding-left: 15px
+}
+
+.kids .browse-menu-genres {
+    border-left: 1px solid #333
+}
+
+.browse-menu-genre {
+    display: block;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.5em;
+    font-size: .9em;
+    float: left
+}
+
+.kids .browse-menu-genre {
+    color: #333
+}
+
+.browse-menu-genres .nested-link-hover,.browse-menu-sections .nested-link-hover {
+    text-decoration: underline
+}
+
+.header-profile {
+    float: right;
+    position: relative;
+    color: #fff
+}
+
+.header-profile:visited {
+    color: #fff
+}
+
+.header-profile:hover {
+    color: #ccc
+}
+
+.header-profile:hover .header-menu {
+    display: block
+}
+
+.column-2 .header-profile,.column-2 .kids .header-profile-exit-kids,.column-3 .header-profile,.column-3 .kids .header-profile-exit-kids {
+    display: none
+}
+
+.kids .header-profile-exit-kids {
+    float: right;
+    padding: .57em
+}
+
+@media screen and (max-width: 500px) {
+    .header-profile,.kids .header-profile-exit-kids {
+        display:none
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width:800px) {
+    .header-profile,.kids .header-profile-exit-kids {
+        display:none
+    }
+}
+
+.header-profile-avatar,.header-profile-name {
+    display: inline-block;
+    vertical-align: middle;
+    height: 2em
+}
+
+.header-profile-avatar {
+    width: 2em
+}
+
+.header-profile-name {
+    padding-left: .8em;
+    line-height: 2em
+}
+
+.header-menu {
+    display: none;
+    position: absolute;
+    background: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/header_menu_background.png) 50% 0 no-repeat;
+    right: 0;
+    width: 10em;
+    padding: 25px 0 .8em
+}
+
+.header-menu .nested-link-hover {
+    text-decoration: underline
+}
+
+.kids .header-menu {
+    background: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/header_menu_background_kids.png) 50% 0 no-repeat
+}
+
+.header-navigation-trigger-open .header-menu {
+    display: block
+}
+
+.header-menu-item {
+    color: #fff;
+    padding: .8em .8em 0;
+    font-size: .9em
+}
+
+.header-menu-account-item {
+    border-top: 1px solid #fff;
+    margin: .8em .8em 0;
+    padding: .8em 0 0
+}
+
+.kids .header-menu-item {
+    color: #333
+}
+
+.kids .header-menu-account-item {
+    border-top: 1px solid #333
+}
+
+.unsupported-browser {
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    background: #000
+}
+
+.browser-message {
+    vertical-align: middle;
+    text-align: center
+}
+
+.browser-message-header {
+    margin: 0 0 1.4em;
+    font-weight: 700;
+    font-size: 1.2em
+}
+
+.header-search-input {
+    float: right;
+    font-size: 12px;
+    margin: 0 20px 0 0;
+    padding: 8px .5em;
+    width: 15em;
+    background: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/secondary_button_hover_background.png);
+    border: 1px solid #ccc;
+    color: #ccc
+}
+
+@media screen and (max-width: 500px) {
+    .header-search-input {
+        width:8em;
+        margin-right: 0;
+        padding: 6px .5em
+    }
+}
+
+.column-2 .header-search-input {
+    width: 8em;
+    margin-right: 0;
+    padding: 6px .5em
+}
+
+@media screen and (min-width: 501px) and (max-width:800px) {
+    .header-search-input {
+        width:10em;
+        margin-right: 0;
+        padding: 6px .5em
+    }
+}
+
+.column-3 .header-search-input {
+    width: 10em;
+    margin-right: 0;
+    padding: 6px .5em
+}
+
+@media screen and (min-width: 801px) and (max-width:1100px) {
+    .header-search-input {
+        width:10em
+    }
+}
+
+.column-4 .header-search-input {
+    width: 10em
+}
+
+.header-search-not-placeholder {
+    color: #fff
+}
+
+.kids .header-search-input {
+    background: #fff;
+    color: #333;
+    border: 1px solid #333
+}
+
+.kids .header-search-not-placeholder {
+    color: #333
+}
+
+.touch-exclusive .header-search-input {
+    font-size: 16px;
+    padding: 4px .5em;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0
+}
+
+@media screen and (max-width: 500px) {
+    .touch-exclusive .header-search-input {
+        width:6em
+    }
+}
+
+.column-2 .touch-exclusive .header-search-input {
+    width: 6em
+}
+
+.spotlight {
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+    border-bottom: 1px solid #000;
+    margin-top: 0
+}
+
+.column-2 .spotlight,.column-3 .spotlight {
+    margin-top: 50px;
+    font-size: .8em
+}
+
+@media screen and (max-width: 500px) {
+    .spotlight {
+        margin-top:50px;
+        font-size: .8em
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width:800px) {
+    .spotlight {
+        margin-top:50px;
+        font-size: .8em
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width:1100px) {
+    .spotlight {
+        font-size:.8em
+    }
+}
+
+.column-4 .spotlight {
+    font-size: .8em
+}
+
+@media screen and (min-width: 1401px) and (max-width:1700px) {
+    .spotlight {
+        font-size:1.2em
+    }
+}
+
+.column-6 .spotlight {
+    font-size: 1.2em
+}
+
+@media screen and (min-width: 1701px) and (max-width:2000px) {
+    .spotlight {
+        font-size:1.6em
+    }
+}
+
+.column-7 .spotlight {
+    font-size: 1.6em
+}
+
+@media screen and (min-width: 2000px) {
+    .spotlight {
+        font-size:2em
+    }
+}
+
+.column-8 .spotlight {
+    font-size: 2em
+}
+
+.kids .spotlight {
+    background: #fff;
+    border-bottom: 1px solid #fff
+}
+
+.show-browser-upgrade .spotlight {
+    margin-top: 120px
+}
+
+.column-2 .show-browser-upgrade .spotlight,.column-3 .show-browser-upgrade .spotlight {
+    margin-top: 170px
+}
+
+@media screen and (max-width: 500px) {
+    .show-browser-upgrade .spotlight {
+        margin-top:170px
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width:800px) {
+    .show-browser-upgrade .spotlight {
+        margin-top:170px
+    }
+}
+
+.spotlight-wrapper {
+    width: 100%;
+    padding-top: 33%;
+    position: relative
+}
+
+.spotlight-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+
+.spotlight-table-wrapper {
+    width: 100%;
+    height: 100%
+}
+
+.spotlight-table-content {
+    vertical-align: middle
+}
+
+.spotlight-readable {
+    position: relative;
+    z-index: 2
+}
+
+.spotlight-name {
+    margin: 0 0 .2em;
+    color: #fff;
+    font-size: 1.5em;
+    width: 60%;
+    text-decoration: none;
+    display: block
+}
+
+.column-2 .spotlight-name,.column-3 .spotlight-name,.column-4 .spotlight-name {
+    width: 66%
+}
+
+.column-2 .spotlight-description,.column-3 .spotlight-description {
+    display: none
+}
+
+@media screen and (max-width: 500px) {
+    .spotlight-name {
+        width:66%
+    }
+
+    .spotlight-description {
+        display: none
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width:800px) {
+    .spotlight-name {
+        width:66%
+    }
+
+    .spotlight-description {
+        display: none
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width:1100px) {
+    .spotlight-name {
+        width:66%
+    }
+}
+
+a.spotlight-name:hover {
+    text-decoration: underline
+}
+
+.kids .spotlight-name {
+    color: #000
+}
+
+.spotlight-metadata {
+    margin: 0 0 1em;
+    font-weight: 700
+}
+
+.spotlight-maturity,.spotlight-year {
+    margin-right: .8em
+}
+
+.spotlight-description {
+    margin: 0 0 1.5em;
+    width: 33%;
+    line-height: 1.4
+}
+
+.spotlight-actions {
+    top: .57em
+}
+
+.spotlight-page-link,.spotlight-watch-title {
+    display: inline-block
+}
+
+.spotlight-page-link {
+    margin: 0 0 0 1.5em
+}
+
+.spotlight-background {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 75%
+}
+
+.spotlight-background-fill {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 0
+}
+
+.spotlight-gradient {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/spotlight_gradient.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 1
+}
+
+.kids .spotlight-gradient {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/spotlight_gradient_kids.png)
+}
+
+.use-alpha-filters .spotlight-gradient {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://assets.nflxext.com/ffe/siteui/akira/fallback/spotlight_gradient.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://assets.nflxext.com/ffe/siteui/akira/fallback/spotlight_gradient.png', sizingMethod='scale')"
+}
+
+.use-alpha-filters.kids .spotlight-gradient {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://assets.nflxext.com/ffe/siteui/akira/fallback/spotlight_gradient_kids.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://assets.nflxext.com/ffe/siteui/akira/fallback/spotlight_gradient_kids.png', sizingMethod='scale')"
+}
+
+.column-2 .spotlight-has-minimal,.spotlight-minimal {
+    display: none
+}
+
+@media screen and (max-width: 500px) {
+    .spotlight-has-minimal {
+        display:none
+    }
+
+    .spotlight-minimal {
+        display: block
+    }
+}
+
+.column-2 .spotlight-minimal {
+    display: block
+}
+
+.spotlight-boxart-minimal {
+    width: 100%
+}
+
+.column-2 .paginate-lomo-left,.column-2 .paginate-lomo-right,.column-3 .paginate-lomo-left,.column-3 .paginate-lomo-right {
+    display: none
+}
+
+.lomo {
+    clear: both;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin: 0 0 1em;
+    -webkit-overflow-scrolling: touch;
+    overflow: -moz-scrollbars-none
+}
+
+.column-2 .lomo,.column-2 .touch-exclusive .lomo,.column-3 .touch-exclusive .lomo {
+    margin: 0
+}
+
+.lomo::-webkit-scrollbar {
+    display: none
+}
+
+.single-row-lomo {
+    position: relative
+}
+
+.paginate-lomo-left,.paginate-lomo-right {
+    position: absolute;
+    top: 1.7em;
+    bottom: 0;
+    background-color: #141414;
+    opacity: .5;
+    zoom:1;background-repeat: no-repeat;
+    background-position: 50% 3.5em;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden
+}
+
+@media screen and (max-width: 500px) {
+    .lomo,.touch-exclusive .lomo {
+        margin:0
+    }
+
+    .paginate-lomo-left,.paginate-lomo-right {
+        display: none
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width:800px) {
+    .touch-exclusive .lomo {
+        margin:0
+    }
+
+    .paginate-lomo-left,.paginate-lomo-right {
+        display: none
+    }
+}
+
+.paginate-lomo-left {
+    left: 0
+}
+
+.kids .paginate-lomo-left,.kids .paginate-lomo-right {
+    background-color: #fff
+}
+
+.character-row .paginate-lomo-left,.character-row .paginate-lomo-right {
+    top: 2.3em;
+    background-color: transparent
+}
+
+.pagination-left-available {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_left.png)
+}
+
+.pagination-left-available:hover {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_left_hover.png)
+}
+
+.kids .pagination-left-available {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_left_kids.png)
+}
+
+.kids .pagination-left-available:hover {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_left_kids_hover.png)
+}
+
+.paginate-lomo-right {
+    right: 0
+}
+
+.pagination-right-available {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_right_v2.png)
+}
+
+.pagination-right-available:hover {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_right_hover.png)
+}
+
+.kids .pagination-right-available {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_right_kids.png)
+}
+
+.kids .pagination-right-available:hover {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_right_kids_hover.png)
+}
+
+.watch-title {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding: 0 0 2.5em;
+    width: 19.67%;
+    cursor: pointer
+}
+
+@media screen and (max-width: 500px) {
+    .watch-title {
+        width:50%
+    }
+}
+
+.column-2 .watch-title {
+    width: 50%
+}
+
+@media screen and (min-width: 501px) and (max-width:800px) {
+    .watch-title {
+        width:33.33333333%
+    }
+}
+
+.column-3 .watch-title {
+    width: 33.33333333%
+}
+
+@media screen and (min-width: 801px) and (max-width:1100px) {
+    .watch-title {
+        width:25%
+    }
+}
+
+.column-4 .watch-title {
+    width: 25%
+}
+
+@media screen and (min-width: 1101px) and (max-width:1400px) {
+    .watch-title {
+        width:20%
+    }
+}
+
+.column-5 .watch-title {
+    width: 20%
+}
+
+@media screen and (min-width: 1401px) and (max-width:1700px) {
+    .watch-title {
+        width:16.66666667%
+    }
+}
+
+.column-6 .watch-title {
+    width: 16.66666667%
+}
+
+@media screen and (min-width: 1701px) and (max-width:2000px) {
+    .watch-title {
+        width:14.28571429%
+    }
+}
+
+.column-7 .watch-title {
+    width: 14.28571429%
+}
+
+@media screen and (min-width: 2000px) {
+    .watch-title {
+        width:12.5%
+    }
+}
+
+.column-8 .watch-title {
+    width: 12.5%
+}
+
+.title-boxart {
+    display: block;
+    width: 99%;
+    margin-right: 1%;
+    cursor: pointer;
+    padding: 28.125% 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
+.watch-icon,.watch-page-link {
+    position: absolute;
+    display: none
+}
+
+.watch-icon {
+    top: 25%;
+    left: 38%;
+    width: 25%;
+    z-index: 3
+}
+
+.watch-page-link {
+    color: #fff;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2.2em;
+    background: #141414
+}
+
+.kids .watch-page-link {
+    background: #fff;
+    color: #333
+}
+
+.watch-page-link-title {
+    display: block;
+    width: 80%;
+    padding: 1px 10%;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    font-weight: 700
+}
+
+.watch-page-link-title.nested-link-hover {
+    text-decoration: underline
+}
+
+.watch-page-link-availability {
+    display: block;
+    color: #999;
+    font-size: .9em;
+    padding: .2em 0;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.watch-page-link-maturity,.watch-page-link-year {
+    padding-right: .8em
+}
+
+.watch-title:hover .watch-icon,.watch-title:hover .watch-page-link {
+    display: block
+}
+
+.watch-character {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding: 0 0 2.5em;
+    width: 19.67%;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%
+}
+
+@media screen and (max-width: 500px) {
+    .watch-character {
+        width:33.33333333%
+    }
+}
+
+.column-2 .watch-character {
+    width: 33.33333333%
+}
+
+@media screen and (min-width: 501px) and (max-width:800px) {
+    .watch-character {
+        width:25%
+    }
+}
+
+.column-3 .watch-character {
+    width: 25%
+}
+
+@media screen and (min-width: 801px) and (max-width:1100px) {
+    .watch-character {
+        width:20%
+    }
+}
+
+.column-4 .watch-character {
+    width: 20%
+}
+
+@media screen and (min-width: 1101px) and (max-width:1400px) {
+    .watch-character {
+        width:16.66666667%
+    }
+}
+
+.column-5 .watch-character {
+    width: 16.66666667%
+}
+
+@media screen and (min-width: 1401px) and (max-width:1700px) {
+    .watch-character {
+        width:14.28571429%
+    }
+}
+
+.column-6 .watch-character {
+    width: 14.28571429%
+}
+
+@media screen and (min-width: 1701px) and (max-width:2000px) {
+    .watch-character {
+        width:12.5%
+    }
+}
+
+.column-7 .watch-character {
+    width: 12.5%
+}
+
+@media screen and (min-width: 2000px) {
+    .watch-character {
+        width:11.11111111%
+    }
+}
+
+.column-8 .watch-character {
+    width: 11.11111111%
+}
+
+.character-image {
+    width: 90%;
+    padding-top: 7%
+}
+
+.character-background-0 {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/character_background_0.png)
+}
+
+.character-background-1 {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/character_background_1.png)
+}
+
+.character-background-2 {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/character_background_2.png)
+}
+
+.character-background-3 {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/character_background_3.png)
+}
+
+.character-background-4 {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/character_background_4.png)
+}
+
+.character-background-5 {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/character_background_5.png)
+}
+
+.character-name {
+    display: none;
+    text-align: center;
+    margin-left: -4%;
+    color: #333;
+    font-size: 1em;
+    font-weight: 700;
+    position: absolute;
+    height: 1em;
+    left: 0;
+    width: 100%
+}
+
+@media screen and (max-width: 500px) {
+    .character-name {
+        font-size:.7em
+    }
+}
+
+.column-2 .character-name {
+    font-size: .7em
+}
+
+@media screen and (min-width: 501px) and (max-width:800px) {
+    .character-name {
+        font-size:.8em
+    }
+}
+
+.column-3 .character-name {
+    font-size: .8em
+}
+
+.watch-character:hover .character-name {
+    display: block
+}
+
+.lolomo {
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 2em
+}
+
+@media screen and (max-width: 500px) {
+    .lolomo-standalone {
+        margin-top:60px
+    }
+}
+
+.column-2 .lolomo-standalone {
+    margin-top: 60px
+}
+
+.lolomo-upgrade {
+    margin-top: 230px
+}
+
+@media screen and (max-width: 500px) {
+    .lolomo-upgrade {
+        margin-top:210px
+    }
+}
+
+.column-2 .lolomo-upgrade {
+    margin-top: 210px
+}
+
+.lolomo-spotlight,.lolomo-upgrade-spotlight {
+    margin-top: 30px
+}
+
+.kids .lolomo {
+    margin-top: 70px
+}
+
+.footer {
+    margin: 50px 0
+}
+
+.footer li {
+    display: inline-block;
+    margin-right: 2em
+}
+
+.footer a {
+    color: #999
+}
+
+.footer a:hover {
+    color: #fff;
+    text-decoration: underline
+}
+
+.instance {
+    margin: 1em 0;
+    font-size: 14px;
+    width: 70%;
+    line-height: 1.4
+}
+
+.kids .footer a:hover {
+    color: #999
+}

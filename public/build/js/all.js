@@ -16,8 +16,15 @@ $stateProvider
       url: '/login',
       controller: 'loginCtrl',
       templateUrl: '../views/login.html'
+    })
+    .state('new', {
+      url: '/new',
+      // controller: 'loginCtrl',
+      templateUrl: '../views/new.html'
     });
-});
+  });
+
+  
 
 angular.module('app').controller('browseCtrl', function($scope) {
 
