@@ -1,22 +1,22 @@
-angular.module('app', ['ui-router'])
+angular.module('app', ['ui.router'])
 .config(function($stateProvider, $urlRouterProvider) {
 $urlRouterProvider.otherwise('/');
 $stateProvider
     .state('home', {
       url: '/',
-      controller: 'homeCtrl',
+      // controller: 'homeCtrl',
       templateUrl: '../views/home.html'
     })
     .state('browse', {
       url: '/browse',
-      controller: 'browseCtrl',
+      // controller: 'browseCtrl',
       templateUrl: '../views/browse.html'
     })
     .state('login', {
       url: '/login',
       controller: 'loginCtrl',
       templateUrl: '../views/login.html'
-    })
+    });
 });
 
 angular.module('app').controller('browseCtrl', function($scope) {
@@ -25,30 +25,30 @@ angular.module('app').controller('browseCtrl', function($scope) {
 
 })
 
-angular.module('app').controller('homeCtrl', function($scope, userService, $state) {
+angular.module('app').controller('homeCtrl', function($scope, $state) {
 
-
-  function getUser() {
-    userService.getUser().then(function(user) {
-      if (user) $scope.user = user.username;
-      else   $scope.user = 'NOT LOGGED IN';
-    });
-  }
-
-  getUser();
-
-  $scope.loginLocal = function(username, password) {
-    console.log('Logging in with', username, password);
-    userService.loginLocal({
-      username: username,
-      password: password
-    })
-    .then(function(res) {
-      getUser();
-    });
-  };
-
-  $scope.logout = userService.logout;
+  // 
+  // function getUser() {
+  //   userService.getUser().then(function(user) {
+  //     if (user) $scope.user = user.username;
+  //     else   $scope.user = 'NOT LOGGED IN';
+  //   });
+  // }
+  //
+  // getUser();
+  //
+  // $scope.loginLocal = function(username, password) {
+  //   console.log('Logging in with', username, password);
+  //   userService.loginLocal({
+  //     username: username,
+  //     password: password
+  //   })
+  //   .then(function(res) {
+  //     getUser();
+  //   });
+  // };
+  //
+  // $scope.logout = userService.logout;
 
 
 });
@@ -65,45 +65,45 @@ angular.module('app').controller('profileCtrl', function($scope) {
 
 })
 
-angular.module('app')
-.service('userService', function($http) {
-  this.loginLocal = function(credentials) {
-    return $http({
-      method: "POST",
-      url: '/auth/local',
-      data: credentials
-    })
-    .then(function(res) {
-      return res.data;
-    })
-    .catch(function(err) {
-      console.log('ERROR LOGGING IN!', err);
-    });
-  };
-
-  this.getUser = function() {
-    return $http({
-      method: 'GET',
-      url: '/auth/me'
-    })
-    .then(function(res) {
-      return res.data;
-    })
-    .catch(function(err) {
-      console.log(err);
-    });
-  };
-
-  this.logout = function() {
-    return $http({
-      method: 'GET',
-      url: '/auth/logout'
-    })
-    .then(function(res) {
-      return res.data;
-    })
-    .catch(function(err) {
-      console.log(err);
-    });
-  };
-});
+// angular.module('app')
+// .service('userService', function($http) {
+//   this.loginLocal = function(credentials) {
+//     return $http({
+//       method: "POST",
+//       url: '/auth/local',
+//       data: credentials
+//     })
+//     .then(function(res) {
+//       return res.data;
+//     })
+//     .catch(function(err) {
+//       console.log('ERROR LOGGING IN!', err);
+//     });
+//   };
+//
+//   this.getUser = function() {
+//     return $http({
+//       method: 'GET',
+//       url: '/auth/me'
+//     })
+//     .then(function(res) {
+//       return res.data;
+//     })
+//     .catch(function(err) {
+//       console.log(err);
+//     });
+//   };
+//
+//   this.logout = function() {
+//     return $http({
+//       method: 'GET',
+//       url: '/auth/logout'
+//     })
+//     .then(function(res) {
+//       return res.data;
+//     })
+//     .catch(function(err) {
+//       console.log(err);
+//     });
+//   };
+// });

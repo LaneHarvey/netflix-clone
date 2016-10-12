@@ -1,27 +1,27 @@
-angular.module('app').controller('homeCtrl', function($scope, userService, $state) {
+angular.module('app').controller('homeCtrl', function($scope, $state) {
 
-
-  function getUser() {
-    userService.getUser().then(function(user) {
-      if (user) $scope.user = user.username;
-      else   $scope.user = 'NOT LOGGED IN';
-    });
-  }
-
-  getUser();
-
-  $scope.loginLocal = function(username, password) {
-    console.log('Logging in with', username, password);
-    userService.loginLocal({
-      username: username,
-      password: password
-    })
-    .then(function(res) {
-      getUser();
-    });
-  };
-
-  $scope.logout = userService.logout;
+  // 
+  // function getUser() {
+  //   userService.getUser().then(function(user) {
+  //     if (user) $scope.user = user.username;
+  //     else   $scope.user = 'NOT LOGGED IN';
+  //   });
+  // }
+  //
+  // getUser();
+  //
+  // $scope.loginLocal = function(username, password) {
+  //   console.log('Logging in with', username, password);
+  //   userService.loginLocal({
+  //     username: username,
+  //     password: password
+  //   })
+  //   .then(function(res) {
+  //     getUser();
+  //   });
+  // };
+  //
+  // $scope.logout = userService.logout;
 
 
 });

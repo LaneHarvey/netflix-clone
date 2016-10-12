@@ -9,7 +9,7 @@ $stateProvider
     })
     .state('browse', {
       url: '/browse',
-      controller: 'browseCtrl',
+      // controller: 'browseCtrl',
       templateUrl: '../views/browse.html'
     })
     .state('login', {
