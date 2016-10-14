@@ -4,12 +4,12 @@ $urlRouterProvider.otherwise('/');
 $stateProvider
     .state('home', {
       url: '/',
-      // controller: 'homeCtrl',
+      controller: 'browseCtrl',
       templateUrl: '../views/home.html'
     })
     .state('browse', {
       url: '/browse',
-      // controller: 'browseCtrl',
+      controller: 'browseCtrl',
       templateUrl: '../views/browse.html'
     })
     .state('login', {
@@ -23,5 +23,3 @@ $stateProvider
       templateUrl: '../views/new.html'
     });
   });
-
-  
