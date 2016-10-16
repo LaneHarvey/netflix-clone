@@ -17,9 +17,9 @@ $stateProvider
       controller: 'loginCtrl',
       templateUrl: '../views/login.html'
     })
-    .state('new', {
-      url: '/new',
+    .state('profiles', {
+      url: '/profiles',
       // controller: 'loginCtrl',
-      templateUrl: '../views/new.html'
+      templateUrl: '../views/profile.html'
     });
   });

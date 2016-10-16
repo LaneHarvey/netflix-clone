@@ -5,7 +5,7 @@ angular.module("app").service("movieService", function($http){
         url: "http://netflixroulette.net/api/api.php?title=" + name
       })
     }
-    this.getAllMovies = function(){
+    this.getMovies = function(){
       return $http({
         method: 'GET',
         url: "http://localhost:8080/api/movies"

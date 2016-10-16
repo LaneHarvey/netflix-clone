@@ -1737,8 +1737,7 @@ a.spotlight-name:hover {
 .kids .footer a:hover {
     color: #999
 }
-
-/*body,
+body,
 html {
   padding: 0 10px;
   margin: 0;
@@ -1746,10 +1745,10 @@ html {
   color: #ecf0f1;
   font-family: 'Open Sans', sans-serif;
   min-height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: -webkit-box;*/
+  /*display: -webkit-flex;*/
+  /*display: -ms-flexbox;*/
+  /*display: flex;*/
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -1760,8 +1759,19 @@ html {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-}*/
-
+}
+* {
+  box-sizing: border-box;
+}
+h1,
+p {
+  text-align: center;
+}
+p {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
 a:link,
 a:hover,
 a:active,
@@ -1806,8 +1816,7 @@ a:hover {
 .tile__img {
   width: 250px;
   height: 140.625px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-size: cover;
 }
 .tile__details {
   position: absolute;

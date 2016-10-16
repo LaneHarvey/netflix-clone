@@ -7,7 +7,7 @@
           <meta charset="utf-8"/>
           <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
           <meta name="viewport" content="width=device-width, initial-scale=1"/>
-          <link type="text/css" rel="stylesheet" href="https://www3-ext-s.nflximg.net/pkg/4.5.0/web/3acf3226/css-secure/3/06e06b06505e06f07207007407107507306c06906d05f067063079/css/z"/>
+          <link type="text/css" rel="stylesheet" href="https://www3-ext-s.nflximg.net/pkg/4.5.19/web/3acf3226/css-secure/3/06e06b06505e06f07207007407107507306c06906d05f067063079/css/z"/>
           <script src="https://www3-ext-s.nflximg.net/pkg/4.5.0/web/3acf3226/js/3/00e26726826526626926a26c261/js/bk" async=""></script>
           <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico"/>
           <link rel="apple-touch-icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.png"/>
@@ -64,7 +64,7 @@
                                       </ol>
                                   </div>
                               </a>
-                              <a ui-sref="browse" class="netflix-logo">
+                              <a ui-sref="profiles" class="netflix-logo">
                                   <img src="https://secure.netflix.com/en_us/layout/ecweb/common/logo-shadow2x.png" class="netflix-logo-image"/>
                               </a>
                               <a ui-sref="browse" class="header-browse header-navigation-trigger header-has-genres">
@@ -119,14 +119,14 @@
                                   <input ng-model="movieName" type="text" name="term" class="header-search-input" placeholder="Search"/>
                                   <section>
                                     <img ng-src="{{movie.poster}}" alt="" />
-                                    <summary>{{movie.summary}}</summary>
+                                    <summary>{{movie.poster}}</summary>
 
                                   </section>
                               </form>
                           </td>
                       </tr>
                   </table>
-                  <div class="body-view" data-progressive-url="/data/browse" data-progressive-low="true">
+                  <div class="body-view">
                       <div class="spotlight">
                           <div class="spotlight-wrapper spotlight-has-minimal">
                               <div class="spotlight-content has-inline-gutter">
@@ -163,222 +163,300 @@
                           <div class="single-row-lomo has-inline-left-gutter">
                               <h2 class="lomo-name row-name">My List</h2>
                               <a href="#left" class="is-gutter paginate-lomo-left">Previous Titles</a>
+                            <div class="contain">
                               <div class="row">
-    <div class="row__inner">
+                                <div class="row__inner" ng-controller="browseCtrl">
 
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-1.jpg" alt="" />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
+                                  <div class="tile">
 
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-2.jpg" alt="" />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
 
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-3.jpg" alt="" />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
+                                        <div class="tile__media" >
+                                          <img class="tile__img" ng-src="{{data[0].poster}}" alt="" />
+                                        </div>
 
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-4.jpg" alt="" />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
 
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-5.jpg" alt="" />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
+                                    <div class="tile__details">
+                                      <div class="tile__title">
+                                        <p>{{data[0].show_title}}</p>
+                                      </div>
+                                    </div>
+                                  </div>
 
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-6.jpg" alt="" />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
+                                  <div class="tile">
 
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-7.jpg" alt="" />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
 
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-8.jpg" alt="" />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
+                                        <div class="tile__media" >
+                                          <img class="tile__img" ng-src="{{data[1].poster}}" alt="" />
+                                        </div>
 
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-9.jpg" alt="" />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
 
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-10.jpg" alt="" />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
+                                    <div class="tile__details">
+                                      <div class="tile__title">
+                                        <p>{{data[1].show_title}}</p>
+                                      </div>
+                                    </div>
+                                  </div>
 
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-11.jpg" alt="" />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
+                                  <div class="tile">
 
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-12.jpg" alt="" />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
 
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-13.jpg" alt="" />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
+                                        <div class="tile__media" >
+                                          <img class="tile__img" ng-src="{{data[2].poster}}" alt="" />
+                                        </div>
 
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-14.jpg" alt="" />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
 
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-15.jpg" alt="" />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
+                                    <div class="tile__details">
+                                      <div class="tile__title">
+                                        <p>{{data[2].show_title}}</p>
+                                      </div>
+                                    </div>
+                                  </div>
 
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-16.jpg" alt="" />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
+                                  <div class="tile">
 
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-17.jpg" alt="" />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
 
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-18.jpg" alt="" />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
+                                        <div class="tile__media" >
+                                          <img class="tile__img" ng-src="{{data[3].poster}}" alt="" />
+                                        </div>
 
-      <div class="tile">
-        <div class="tile__media">
-          <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-19.jpg" alt="" />
-        </div>
-        <div class="tile__details">
-          <div class="tile__title">
-            Top Gear
-          </div>
-        </div>
-      </div>
 
-    </div>
-  </div>
+                                    <div class="tile__details">
+                                      <div class="tile__title">
+                                        <p>{{data[3].show_title}}</p>
+                                      </div>
+                                    </div>
+                                  </div>
 
-</div>
+                                  <div class="tile">
+
+
+                                        <div class="tile__media" >
+                                          <img class="tile__img" ng-src="{{data[4].poster}}" alt="" />
+                                        </div>
+
+
+                                    <div class="tile__details">
+                                      <div class="tile__title">
+                                        <p>{{data[4].show_title}}</p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                    <div class="tile">
+
+
+                                          <div class="tile__media" >
+                                            <img class="tile__img" ng-src="{{data[5].poster}}" alt="" />
+                                          </div>
+
+
+                                      <div class="tile__details">
+                                        <div class="tile__title">
+                                          <p>{{data[5].show_title}}</p>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="tile">
+
+
+                                          <div class="tile__media" >
+                                            <img class="tile__img" ng-src="{{data[6].poster}}" alt="" />
+                                          </div>
+
+
+                                      <div class="tile__details">
+                                        <div class="tile__title">
+                                          <p>{{data[6].show_title}}</p>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="tile">
+
+
+                                          <div class="tile__media" >
+                                            <img class="tile__img" ng-src="{{data[7].poster}}" alt="" />
+                                          </div>
+
+
+                                      <div class="tile__details">
+                                        <div class="tile__title">
+                                          <p>{{data[7].show_title}}</p>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="tile">
+
+
+                                          <div class="tile__media" >
+                                            <img class="tile__img" ng-src="{{data[8].poster}}" alt="" />
+                                          </div>
+
+
+                                      <div class="tile__details">
+                                        <div class="tile__title">
+                                          <p>{{data[8].show_title}}</p>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="tile">
+
+
+                                          <div class="tile__media" >
+                                            <img class="tile__img" ng-src="{{data[9].poster}}" alt="" />
+                                          </div>
+
+
+                                      <div class="tile__details">
+                                        <div class="tile__title">
+                                          <p>{{data[10].show_title}}</p>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="tile">
+
+
+                                          <div class="tile__media" >
+                                            <img class="tile__img" ng-src="{{data[11].poster}}" alt="" />
+                                          </div>
+
+
+                                      <div class="tile__details">
+                                        <div class="tile__title">
+                                          <p>{{data[11].show_title}}</p>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="tile">
+
+
+                                          <div class="tile__media" >
+                                            <img class="tile__img" ng-src="{{data[12].poster}}" alt="" />
+                                          </div>
+
+
+                                      <div class="tile__details">
+                                        <div class="tile__title">
+                                          <p>{{data[12].show_title}}</p>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="tile">
+
+
+                                          <div class="tile__media" >
+                                            <img class="tile__img" ng-src="{{data[13].poster}}" alt="" />
+                                          </div>
+
+
+                                      <div class="tile__details">
+                                        <div class="tile__title">
+                                          <p>{{data[13].show_title}}</p>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="tile">
+
+
+                                          <div class="tile__media" >
+                                            <img class="tile__img" ng-src="{{data[14].poster}}" alt="" />
+                                          </div>
+
+
+                                      <div class="tile__details">
+                                        <div class="tile__title">
+                                          <p>{{data[14].show_title}}</p>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="tile">
+
+
+                                          <div class="tile__media" >
+                                            <img class="tile__img" ng-src="{{data[15].poster}}" alt="" />
+                                          </div>
+
+
+                                      <div class="tile__details">
+                                        <div class="tile__title">
+                                          <p>{{data[15].show_title}}</p>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="tile">
+
+
+                                          <div class="tile__media" >
+                                            <img class="tile__img" ng-src="{{data[16].poster}}" alt="" />
+                                          </div>
+
+
+                                      <div class="tile__details">
+                                        <div class="tile__title">
+                                          <p>{{data[16].show_title}}</p>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="tile">
+
+
+                                          <div class="tile__media" >
+                                            <img class="tile__img" ng-src="{{data[17].poster}}" alt="" />
+                                          </div>
+
+
+                                      <div class="tile__details">
+                                        <div class="tile__title">
+                                          <p>{{data[17].show_title}}</p>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="tile">
+
+
+                                          <div class="tile__media" >
+                                            <img class="tile__img" ng-src="{{data[18].poster}}" alt="" />
+                                          </div>
+
+
+                                      <div class="tile__details">
+                                        <div class="tile__title">
+                                          <p>{{data[18].show_title}}</p>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="tile">
+
+
+                                          <div class="tile__media" >
+                                            <img class="tile__img" ng-src="{{data[19].poster}}" alt="" />
+                                          </div>
+
+
+                                      <div class="tile__details">
+                                        <div class="tile__title">
+                                          <p>{{data[19].show_title}}</p>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
                               <div class="lomo has-inline-right-gutter">
 
                               </div>
@@ -413,7 +491,7 @@
                       </ol>
                   </div>
               </div>
-          </div>
+
 
       </body>
   </html>
