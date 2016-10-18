@@ -4,7 +4,7 @@ $urlRouterProvider.otherwise('/');
 $stateProvider
     .state('home', {
       url: '/',
-      controller: 'browseCtrl',
+      controller: 'loginCtrl',
       templateUrl: '../views/home.html'
     })
     .state('browse', {
@@ -17,10 +17,10 @@ $stateProvider
       controller: 'loginCtrl',
       templateUrl: '../views/login.html'
     })
-    .state('new', {
-      url: '/new',
+    .state('profiles', {
+      url: '/profiles',
       // controller: 'loginCtrl',
-      templateUrl: '../views/new.html'
+      templateUrl: '../views/profile.html'
     });
   });
 
@@ -51,35 +51,33 @@ angular.module('app').controller("browseCtrl", function($scope, $http, $state, m
 
 angular.module('app').controller('homeCtrl', function($scope, $state) {
 
-  // 
-  // function getUser() {
-  //   userService.getUser().then(function(user) {
-  //     if (user) $scope.user = user.username;
-  //     else   $scope.user = 'NOT LOGGED IN';
-  //   });
-  // }
-  //
-  // getUser();
-  //
-  // $scope.loginLocal = function(username, password) {
-  //   console.log('Logging in with', username, password);
-  //   userService.loginLocal({
-  //     username: username,
-  //     password: password
-  //   })
-  //   .then(function(res) {
-  //     getUser();
-  //   });
-  // };
-  //
-  // $scope.logout = userService.logout;
+
 
 
 });
 
-angular.module('app').controller('loginCtrl', function($scope) {
+angular.module('app').controller('loginCtrl', function($scope, loginService, $auth, $state) {
 
-  $scope.test = "working";
+  $scope.login = function(user){
+       $auth.login(user).then(function(res){
+
+           $state.go('browse')
+
+
+       });
+   }
+
+   $scope.signUp = function(user) {
+      $auth.signup(user).then(function(response) {
+           $auth.setToken(response.data.token);
+       console.log("signed up")
+       $state.go('browse')
+
+     });
+  }
+
+
+
 
 })
 
@@ -88,6 +86,20 @@ angular.module('app').controller('profileCtrl', function($scope) {
   $scope.test = "working";
 
 })
+
+
+angular.module("app").service("loginService", function($http) {
+
+this.userSignUp = function(){
+    return $http({
+        method:"POST",
+        url:"auth/login"
+    }).then(function(response){
+        return response
+    })
+}
+
+});
 
 angular.module("app").service("movieService", function($http){
     this.search = function(name){
@@ -111,45 +123,45 @@ angular.module("app").service("movieService", function($http){
     }
 })
 
-// angular.module('app')
-// .service('userService', function($http) {
-//   this.loginLocal = function(credentials) {
-//     return $http({
-//       method: "POST",
-//       url: '/auth/local',
-//       data: credentials
-//     })
-//     .then(function(res) {
-//       return res.data;
-//     })
-//     .catch(function(err) {
-//       console.log('ERROR LOGGING IN!', err);
-//     });
-//   };
-//
-//   this.getUser = function() {
-//     return $http({
-//       method: 'GET',
-//       url: '/auth/me'
-//     })
-//     .then(function(res) {
-//       return res.data;
-//     })
-//     .catch(function(err) {
-//       console.log(err);
-//     });
-//   };
-//
-//   this.logout = function() {
-//     return $http({
-//       method: 'GET',
-//       url: '/auth/logout'
-//     })
-//     .then(function(res) {
-//       return res.data;
-//     })
-//     .catch(function(err) {
-//       console.log(err);
-//     });
-//   };
-// });
+angular.module('app')
+.service('userService', function($http) {
+  this.loginLocal = function(data) {
+    return $http({
+      method: "POST",
+      url: '/register',
+      data: data
+    })
+    .then(function(res) {
+      return res.data;
+    })
+    .catch(function(err) {
+      console.log('ERROR LOGGING IN!', err);
+    });
+  };
+
+  this.getUser = function() {
+    return $http({
+      method: 'GET',
+      url: '/login'
+    })
+    .then(function(res) {
+      return res.data;
+    })
+    .catch(function(err) {
+      console.log(err);
+    });
+  };
+
+  this.logout = function() {
+    return $http({
+      method: 'POST',
+      url: '/logout'
+    })
+    .then(function(res) {
+      return res.data;
+    })
+    .catch(function(err) {
+      console.log(err);
+    });
+  };
+});

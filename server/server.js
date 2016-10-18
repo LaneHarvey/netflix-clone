@@ -1,3 +1,5 @@
+// "use strict";
+
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
@@ -10,7 +12,14 @@ var massive = require('massive');
 const NetflixRoulette = require('netflix-roulette');
 const config = require('./config.js');
 const cors = require('cors');
+// const webkit = require('webkit');
+// const nwebkit = require('node-webkit');
+
 const connectionString = "postgres://postgres:@localhost/Netflix";
+var Keys = require('keys.js');
+var moment = require('moment');
+moment().format();
+
 
 
 const app = module.exports = express();
@@ -45,6 +54,19 @@ app.use(session({
 
 app.get('/api/movies', mainCtrl.getAllMovies)
 app.post('/api/movie', mainCtrl.createMovie)
+app.post('/auth/login', mainCtrl.userLogin);
+app.post('/auth/signup', mainCtrl.userSignUp);
+app.get('/api/me', mainCtrl.ensureAuthenticated, mainCtrl.getCurrentUser);
+app.put('/api/user/:id', mainCtrl.updateUser);
+
+// var router = express.Router();
+
+// router.use(function(req, res, next){
+// 	next();
+// });
+
+
+// require('./routes')(router);
 
 
 

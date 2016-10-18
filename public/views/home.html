@@ -9,24 +9,21 @@
       <img class="logo" src="img/logo.png" alt="Getflix">
       <div class="form">
         <p>Sign In</p>
-        <form>
+        <form method="post" ng-click="login(user)">
           <label for="email">Email</label>
-          <input class="email text-input" type="email" name="email">
+          <input class="email text-input" type="email" name="username" ng-model="user.username">
           <label for="password">Password</label>
-          <input class="password text-input" type="password" name="password">
+          <input class="password text-input" type="password" name="password" ng-model="user.password">
           <a id="forgot" href="#">Forgot your email or password?</a>
           <br>
-          <input class="inline" type="checkbox" name="check">
-          <label for="check" class="inline">Remember me on this device.</label>
-          <img class="question-mark" src="img/question.png" alt="Remember me on this device." >
-          <button class="button-red sign-in" ui-sref="browse">Sign In</button>
+          <button class="button-red sign-in">Sign In</button>
           <button class="button-fb sign-in">Login with Facebook</button>
-          <div class="sign-up"><p>New to Getflix?</p><a href="#"> Sign up now.</a></div>
+          <div class="sign-up"><p>New to Getflix?</p><a ui-sref="register"> Sign up now.</a></div>
         </form>
 
       </div>
     </div>
-    
+
     <footer>
       <div class="footer-container">
         <p id="questions">Any questions? Phone 1800 071 578</p>

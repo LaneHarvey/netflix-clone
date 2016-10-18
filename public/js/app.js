@@ -4,7 +4,7 @@ $urlRouterProvider.otherwise('/');
 $stateProvider
     .state('home', {
       url: '/',
-      controller: 'browseCtrl',
+      controller: 'loginCtrl',
       templateUrl: '../views/home.html'
     })
     .state('browse', {
@@ -21,5 +21,10 @@ $stateProvider
       url: '/profiles',
       // controller: 'loginCtrl',
       templateUrl: '../views/profile.html'
+    })
+    .state('watch', {
+      url: '/watch',
+      // controller: 'loginCtrl',
+      templateUrl: '../views/watch.html'
     });
   });

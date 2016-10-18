@@ -22,14 +22,19 @@
     "express": "^4.14.0",
     "express-session": "^1.14.1",
     "gulp": "^3.9.1",
+    "keys.js": "^1.0.2",
     "massive": "^2.5.0",
     "netflix-roulette": "^1.0.2",
+    "node-webkit": "0.0.0",
+    "nw": "^0.18.0",
     "passport": "^0.3.2",
     "passport-facebook": "^2.1.1",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "webkit": "0.0.0"
   },
   "devDependencies": {
     "gulp-concat": "^2.6.0",
-    "gulp-sass": "^2.3.2"
+    "gulp-sass": "^2.3.2",
+    "video.js": "^5.11.8"
   }
 }

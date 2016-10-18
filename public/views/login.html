@@ -2,11 +2,37 @@
 <html ng-app="app">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Login</title>
   </head>
   <body>
+    <div>
 
-    <ui-view></ui-view>
+
+
+
+            <div>
+                    <form method="post" ng-click="loginLocal(email, pword)">
+
+                      <div>
+                        <input ng-model="email.email" type="text" name="name" placeholder="Username" />
+                      </div>
+
+
+                      <div>
+                        <input ng-model="pword.pword" type="password" name="name" placeholder="Password"/>
+                      </div>
+
+                      <button><div ui-sref="browse">Login</div></button>
+                  </form>
+
+
+                <div>
+                      <a ui-sref="home">Don't have an account ? <b>Sign Up</b> </a>
+
+                  </div>
+
+    </div>
+</div>
 
   </body>
 </html>

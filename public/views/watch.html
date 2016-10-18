@@ -2,11 +2,32 @@
 <html ng-app="app">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Video Player</title>
+    <link href="http://vjs.zencdn.net/5.11.8/video-js.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../css/moo.scss">
+    <link type="text/css" rel="stylesheet" href="../css/browse.css">
+
+
+
+ <!-- If you'd like to support IE8 -->
+ <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
   </head>
   <body>
 
-    <ui-view></ui-view>
+    <video class="video-js moo-css vjs-default-skin" controls preload="auto" background="cover" background-color="black" height="100%" width="100%"
+     autoplay onclick="this.paused?this.play():this.pause()" data-setup="{}">
+    <source src="../JessicaJones.mp4" type="video/mp4">
+        <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider upgrading to a web browser that
+          <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+        </p>
+    </video>
+    <a ui-sref="browse">Browse</a>
+
+
+
+      <script src="http://vjs.zencdn.net/5.11.8/video.js"></script>
+
 
   </body>
 </html>

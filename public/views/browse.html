@@ -5,10 +5,15 @@
           <title>Netflix</title>
           <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
           <meta charset="utf-8"/>
-          <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
           <meta name="viewport" content="width=device-width, initial-scale=1"/>
-          <link type="text/css" rel="stylesheet" href="https://www3-ext-s.nflximg.net/pkg/4.5.19/web/3acf3226/css-secure/3/06e06b06505e06f07207007407107507306c06906d05f067063079/css/z"/>
-          <script src="https://www3-ext-s.nflximg.net/pkg/4.5.0/web/3acf3226/js/3/00e26726826526626926a26c261/js/bk" async=""></script>
+          <link rel="stylesheet" href="css/profiles.css">
+
+          <link rel="stylesheet" type="text/css" href="css/browse.css">
+          <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+
+
+
           <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico"/>
           <link rel="apple-touch-icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.png"/>
       </head>
@@ -18,49 +23,49 @@
                   <table class="header">
                       <tr>
                           <td class="header-item has-inline-left-gutter header-netflix-logo">
-                              <a href="#/browse" class="header-navigation-menu header-navigation-genres">
+                              <a href="#browse" class="header-navigation-menu header-navigation-genres">
                                   <img src="https://assets.nflxext.com/ffe/siteui/akira/fallback/hamburger.gif" class="netflix-header-more"/>
                                   <div class="header-navigation-slider-background"></div>
-                                  <div class="header-navigation-slider">
+                                    <div class="header-navigation-slider" style="left: 0px;">
                                       <ol class="navigation-menu-settings">
                                           <li class="has-inline-left-gutter navigation-menu-profile">
-                                              <img class="header-profile-avatar"/>
-                                              <p class="navigation-menu-profile-link" data-href="/ProfilesGate">
-                                                  <span class="navigation-menu-profile-name" data-href="/ProfilesGate">Lane</span>
-                                                  <span class="navigation-menu-profile-text" data-href="/ProfilesGate">Switch Profiles</span>
+                                              <img src="https://secure.netflix.com/ffe/profiles/avatars_v2/64x64/PICON_022.png" class="header-profile-avatar"/>
+                                              <p class="navigation-menu-profile-link" ui-sref="profiles">
+                                                  <span class="navigation-menu-profile-name" ui-sref="browse">Lane</span>
+                                                  <span class="navigation-menu-profile-text" ui-sref="browse">Switch Profiles</span>
                                               </p>
                                           </li>
-                                          <li class="has-inline-left-gutter navigation-menu-setting" data-href="/YourAccount">Your Account</li>
-                                          <li class="has-inline-left-gutter navigation-menu-setting" data-href="/SignOut?lnkctr=mL">Sign Out of Netflix</li>
+                                          <li class="has-inline-left-gutter navigation-menu-setting" ui-sref="profiles">Your Account</li>
+                                          <li class="has-inline-left-gutter navigation-menu-setting" ui-sref="signout">Sign Out of Netflix</li>
                                       </ol>
                                       <ol class="navigation-menu-sections">
-                                          <li class="has-inline-left-gutter-border navigation-menu-section navigation-menu-section-active" data-href="/browse">Home</li>
-                                          <li class="has-inline-left-gutter-border navigation-menu-section" data-href="/browse/my-list">My List</li>
+                                          <li class="has-inline-left-gutter-border navigation-menu-section navigation-menu-section-active" ui-sref="/browse">Home</li>
+                                          <li class="has-inline-left-gutter-border navigation-menu-section" ui-sref="myListui">My List</li>
                                       </ol>
                                       <ol class="navigation-menu-genres">
-                                          <li class="has-inline-left-gutter-border navigation-menu-genre" data-href="/browse/genre/83">TV Shows</li>
-                                          <li class="has-inline-left-gutter-border navigation-menu-genre" data-href="/browse/genre/1365">Action &amp;Adventure</li>
-                                          <li class="has-inline-left-gutter-border navigation-menu-genre" data-href="/browse/genre/7424">Anime</li>
-                                          <li class="has-inline-left-gutter-border navigation-menu-genre" data-href="/browse/genre/783">Children &amp;Family Movies</li>
-                                          <li class="has-inline-left-gutter-border navigation-menu-genre" data-href="/browse/genre/31574">Classic Movies</li>
-                                          <li class="has-inline-left-gutter-border navigation-menu-genre" data-href="/browse/genre/6548">Comedies</li>
-                                          <li class="has-inline-left-gutter-border navigation-menu-genre" data-href="/browse/genre/7627">Cult Movies</li>
-                                          <li class="has-inline-left-gutter-border navigation-menu-genre" data-href="/browse/genre/6839">Documentaries</li>
-                                          <li class="has-inline-left-gutter-border navigation-menu-genre" data-href="/browse/genre/5763">Dramas</li>
-                                          <li class="has-inline-left-gutter-border navigation-menu-genre" data-href="/browse/genre/26835">Faith &amp;Spirituality</li>
-                                          <li class="has-inline-left-gutter-border navigation-menu-genre" data-href="/browse/genre/5977">LGBT Movies</li>
-                                          <li class="has-inline-left-gutter-border navigation-menu-genre" data-href="/browse/genre/108663">Halloween Favorites</li>
-                                          <li class="has-inline-left-gutter-border navigation-menu-genre" data-href="/browse/genre/8711">Horror Movies</li>
-                                          <li class="has-inline-left-gutter-border navigation-menu-genre" data-href="/browse/genre/7077">Independent Movies</li>
-                                          <li class="has-inline-left-gutter-border navigation-menu-genre" data-href="/browse/genre/78367">International Movies</li>
-                                          <li class="has-inline-left-gutter-border navigation-menu-genre" data-href="/browse/genre/1701">Music</li>
-                                          <li class="has-inline-left-gutter-border navigation-menu-genre" data-href="/browse/genre/13335">Musicals</li>
-                                          <li class="has-inline-left-gutter-border navigation-menu-genre" data-href="/browse/genre/8883">Romantic Movies</li>
-                                          <li class="has-inline-left-gutter-border navigation-menu-genre" data-href="/browse/genre/1492">Sci-Fi &amp;Fantasy</li>
-                                          <li class="has-inline-left-gutter-border navigation-menu-genre" data-href="/browse/genre/6814">Special Interest</li>
-                                          <li class="has-inline-left-gutter-border navigation-menu-genre" data-href="/browse/genre/4370">Sports Movies</li>
-                                          <li class="has-inline-left-gutter-border navigation-menu-genre" data-href="/browse/genre/1516534">Talk Shows &amp;Stand-up Comedy</li>
-                                          <li class="has-inline-left-gutter-border navigation-menu-genre" data-href="/browse/genre/8933">Thrillers</li>
+                                          <li class="has-inline-left-gutter-border navigation-menu-genre" ui-sref="/browse/genre/83">TV Shows</li>
+                                          <li class="has-inline-left-gutter-border navigation-menu-genre" ui-sref="/browse/genre/1365">Action &amp;Adventure</li>
+                                          <li class="has-inline-left-gutter-border navigation-menu-genre" ui-sref="/browse/genre/7424">Anime</li>
+                                          <li class="has-inline-left-gutter-border navigation-menu-genre" ui-sref="/browse/genre/783">Children &amp;Family Movies</li>
+                                          <li class="has-inline-left-gutter-border navigation-menu-genre" ui-sref="/browse/genre/31574">Classic Movies</li>
+                                          <li class="has-inline-left-gutter-border navigation-menu-genre" ui-sref="/browse/genre/6548">Comedies</li>
+                                          <li class="has-inline-left-gutter-border navigation-menu-genre" ui-sref="/browse/genre/7627">Cult Movies</li>
+                                          <li class="has-inline-left-gutter-border navigation-menu-genre" ui-sref="/browse/genre/6839">Documentaries</li>
+                                          <li class="has-inline-left-gutter-border navigation-menu-genre" ui-sref="/browse/genre/5763">Dramas</li>
+                                          <li class="has-inline-left-gutter-border navigation-menu-genre" ui-sref="/browse/genre/26835">Faith &amp;Spirituality</li>
+                                          <li class="has-inline-left-gutter-border navigation-menu-genre" ui-sref="/browse/genre/5977">LGBT Movies</li>
+                                          <li class="has-inline-left-gutter-border navigation-menu-genre" ui-sref="/browse/genre/108663">Halloween Favorites</li>
+                                          <li class="has-inline-left-gutter-border navigation-menu-genre" ui-sref="/browse/genre/8711">Horror Movies</li>
+                                          <li class="has-inline-left-gutter-border navigation-menu-genre" ui-sref="/browse/genre/7077">Independent Movies</li>
+                                          <li class="has-inline-left-gutter-border navigation-menu-genre" ui-sref="/browse/genre/78367">International Movies</li>
+                                          <li class="has-inline-left-gutter-border navigation-menu-genre" ui-sref="/browse/genre/1701">Music</li>
+                                          <li class="has-inline-left-gutter-border navigation-menu-genre" ui-sref="/browse/genre/13335">Musicals</li>
+                                          <li class="has-inline-left-gutter-border navigation-menu-genre" ui-sref="/browse/genre/8883">Romantic Movies</li>
+                                          <li class="has-inline-left-gutter-border navigation-menu-genre" ui-sref="/browse/genre/1492">Sci-Fi &amp;Fantasy</li>
+                                          <li class="has-inline-left-gutter-border navigation-menu-genre" ui-sref="/browse/genre/6814">Special Interest</li>
+                                          <li class="has-inline-left-gutter-border navigation-menu-genre" ui-sref="/browse/genre/4370">Sports Movies</li>
+                                          <li class="has-inline-left-gutter-border navigation-menu-genre" ui-sref="/browse/genre/1516534">Talk Shows &amp;Stand-up Comedy</li>
+                                          <li class="has-inline-left-gutter-border navigation-menu-genre" ui-sref="/browse/genre/8933">Thrillers</li>
                                       </ol>
                                   </div>
                               </a>
@@ -71,33 +76,33 @@
                                   <span class="header-navigation-text">Browse</span>
                                   <div class="header-browse-menu header-subnavigation">
                                       <ol class="browse-menu-sections">
-                                          <li class="browse-menu-section browse-menu-section-active" data-href="/browse">Home</li>
-                                          <li class="browse-menu-section" data-href="/browse/my-list">My List</li>
+                                          <li class="browse-menu-section browse-menu-section-active" ui-sref="/browse">Home</li>
+                                          <li class="browse-menu-section" ui-sref="/browse/my-list">My List</li>
                                       </ol>
                                       <ol class="browse-menu-genres">
-                                          <li class="browse-menu-genre" data-href="/browse/genre/83">TV Shows</li>
-                                          <li class="browse-menu-genre" data-href="/browse/genre/1365">Action &amp;Adventure</li>
-                                          <li class="browse-menu-genre" data-href="/browse/genre/7424">Anime</li>
-                                          <li class="browse-menu-genre" data-href="/browse/genre/783">Children &amp;Family Movies</li>
-                                          <li class="browse-menu-genre" data-href="/browse/genre/31574">Classic Movies</li>
-                                          <li class="browse-menu-genre" data-href="/browse/genre/6548">Comedies</li>
-                                          <li class="browse-menu-genre" data-href="/browse/genre/7627">Cult Movies</li>
-                                          <li class="browse-menu-genre" data-href="/browse/genre/6839">Documentaries</li>
-                                          <li class="browse-menu-genre" data-href="/browse/genre/5763">Dramas</li>
-                                          <li class="browse-menu-genre" data-href="/browse/genre/26835">Faith &amp;Spirituality</li>
-                                          <li class="browse-menu-genre" data-href="/browse/genre/5977">LGBT Movies</li>
-                                          <li class="browse-menu-genre" data-href="/browse/genre/108663">Halloween Favorites</li>
-                                          <li class="browse-menu-genre" data-href="/browse/genre/8711">Horror Movies</li>
-                                          <li class="browse-menu-genre" data-href="/browse/genre/7077">Independent Movies</li>
-                                          <li class="browse-menu-genre" data-href="/browse/genre/78367">International Movies</li>
-                                          <li class="browse-menu-genre" data-href="/browse/genre/1701">Music</li>
-                                          <li class="browse-menu-genre" data-href="/browse/genre/13335">Musicals</li>
-                                          <li class="browse-menu-genre" data-href="/browse/genre/8883">Romantic Movies</li>
-                                          <li class="browse-menu-genre" data-href="/browse/genre/1492">Sci-Fi &amp;Fantasy</li>
-                                          <li class="browse-menu-genre" data-href="/browse/genre/6814">Special Interest</li>
-                                          <li class="browse-menu-genre" data-href="/browse/genre/4370">Sports Movies</li>
-                                          <li class="browse-menu-genre" data-href="/browse/genre/1516534">Talk Shows &amp;Stand-up Comedy</li>
-                                          <li class="browse-menu-genre" data-href="/browse/genre/8933">Thrillers</li>
+                                          <li class="browse-menu-genre" ui-sref="/browse/genre/83">TV Shows</li>
+                                          <li class="browse-menu-genre" ui-sref="/browse/genre/1365">Action &amp;Adventure</li>
+                                          <li class="browse-menu-genre" ui-sref="/browse/genre/7424">Anime</li>
+                                          <li class="browse-menu-genre" ui-sref="/browse/genre/783">Children &amp;Family Movies</li>
+                                          <li class="browse-menu-genre" ui-sref="/browse/genre/31574">Classic Movies</li>
+                                          <li class="browse-menu-genre" ui-sref="/browse/genre/6548">Comedies</li>
+                                          <li class="browse-menu-genre" ui-sref="/browse/genre/7627">Cult Movies</li>
+                                          <li class="browse-menu-genre" ui-sref="/browse/genre/6839">Documentaries</li>
+                                          <li class="browse-menu-genre" ui-sref="/browse/genre/5763">Dramas</li>
+                                          <li class="browse-menu-genre" ui-sref="/browse/genre/26835">Faith &amp;Spirituality</li>
+                                          <li class="browse-menu-genre" ui-sref="/browse/genre/5977">LGBT Movies</li>
+                                          <li class="browse-menu-genre" ui-sref="/browse/genre/108663">Halloween Favorites</li>
+                                          <li class="browse-menu-genre" ui-sref="/browse/genre/8711">Horror Movies</li>
+                                          <li class="browse-menu-genre" ui-sref="/browse/genre/7077">Independent Movies</li>
+                                          <li class="browse-menu-genre" ui-sref="/browse/genre/78367">International Movies</li>
+                                          <li class="browse-menu-genre" ui-sref="/browse/genre/1701">Music</li>
+                                          <li class="browse-menu-genre" ui-sref="/browse/genre/13335">Musicals</li>
+                                          <li class="browse-menu-genre" ui-sref="/browse/genre/8883">Romantic Movies</li>
+                                          <li class="browse-menu-genre" ui-sref="/browse/genre/1492">Sci-Fi &amp;Fantasy</li>
+                                          <li class="browse-menu-genre" ui-sref="/browse/genre/6814">Special Interest</li>
+                                          <li class="browse-menu-genre" ui-sref="/browse/genre/4370">Sports Movies</li>
+                                          <li class="browse-menu-genre" ui-sref="/browse/genre/1516534">Talk Shows &amp;Stand-up Comedy</li>
+                                          <li class="browse-menu-genre" ui-sref="/browse/genre/8933">Thrillers</li>
                                       </ol>
                                   </div>
                               </a>
@@ -106,26 +111,27 @@
                               </a>
                           </td>
                           <td class="header-item has-inline-right-gutter header-profile-wrapper">
-                              <a href="/ProfilesGate" class="header-profile">
-                                  <img class="header-profile-avatar"/>
+                              <a ui-sref="profiles" class="header-profile">
+                                  <img class="header-profile-avatar" src="https://secure.netflix.com/ffe/profiles/avatars_v2/64x64/PICON_022.png"/>
                                   <span class="header-profile-name">Lane</span>
                                   <div class="header-menu">
-                                      <p class="header-menu-item" data-href="/ProfilesGate">Switch Profiles</p>
-                                      <p class="header-menu-item header-menu-account-item" data-href="/YourAccount">Your Account</p>
-                                      <p class="header-menu-item" data-href="/SignOut?lnkctr=mL">Sign Out of Netflix</p>
+                                      <p class="header-menu-item" ui-sref="/ProfilesGate">Switch Profiles</p>
+                                      <p class="header-menu-item header-menu-account-item" ui-sref="profiles">Your Account</p>
+                                      <p class="header-menu-item" ui-sref="/SignOut?lnkctr=mL">Sign Out of Netflix</p>
                                   </div>
                               </a>
                               <form ng-submit="searchMovie(movieName)" ng-controller="browseCtrl" class="header-search-form">
                                   <input ng-model="movieName" type="text" name="term" class="header-search-input" placeholder="Search"/>
                                   <section>
                                     <img ng-src="{{movie.poster}}" alt="" />
-                                    <summary>{{movie.poster}}</summary>
+                                    <summary>{{movie.title}}</summary>
 
                                   </section>
                               </form>
                           </td>
                       </tr>
                   </table>
+
                   <div class="body-view">
                       <div class="spotlight">
                           <div class="spotlight-wrapper spotlight-has-minimal">
@@ -133,7 +139,8 @@
                                   <table class="spotlight-table-wrapper">
                                       <tr>
                                           <td class="spotlight-table-content">
-                                              <a href="/title/80002311" class="spotlight-name spotlight-readable">Marvel &#x27;s Jessica Jones</a>
+                                              <a ui-sref="watch" class="spotlight-name spotlight-readable">Marvel &#x27;s Jessica Jones</a>
+
                                               <p class="spotlight-metadata spotlight-readable">
                                                   <span class="spotlight-year">2015</span>
                                                   <span class="spotlight-maturity">TV-MA</span>
@@ -141,7 +148,7 @@
                                               </p>
                                               <p class="spotlight-description spotlight-readable">Haunted by a traumatic past, Jessica Jones uses her gifts as a private eye to find her tormentor before he can harm anyone else in Hell &#x27;s Kitchen.</p>
                                               <div class="spotlight-actions">
-                                                  <a href="/watch/80002311" class="action-button spotlight-watch-title spotlight-readable">Play</a>
+                                                  <a ui-sref="watch" class="action-button spotlight-watch-title spotlight-readable">Play</a>
                                                   <a href="/title/80002311" class="secondary-button spotlight-page-link spotlight-readable">Episodes</a>
                                               </div>
                                           </td>
@@ -154,7 +161,7 @@
                               </div>
                           </div>
                           <div class="spotlight-minimal">
-                              <a href="/title/80002311">
+                              <a>
                                   <img class="spotlight-boxart-minimal" src="https://art-s.nflximg.net/1980b/df7fad1c934a4f10ee3a47bcb6b69136c9a1980b.jpg"/>
                               </a>
                           </div>
@@ -162,7 +169,6 @@
                       <div class="lolomo lolomo-spotlight">
                           <div class="single-row-lomo has-inline-left-gutter">
                               <h2 class="lomo-name row-name">My List</h2>
-                              <a href="#left" class="is-gutter paginate-lomo-left">Previous Titles</a>
                             <div class="contain">
                               <div class="row">
                                 <div class="row__inner" ng-controller="browseCtrl">
@@ -172,6 +178,7 @@
 
                                         <div class="tile__media" >
                                           <img class="tile__img" ng-src="{{data[0].poster}}" alt="" />
+
                                         </div>
 
 
@@ -460,23 +467,18 @@
                               <div class="lomo has-inline-right-gutter">
 
                               </div>
-                              <a href="#right" class="is-gutter paginate-lomo-right">Next Titles</a>
                           </div>
                           <div class="single-row-lomo has-inline-left-gutter">
                               <h2 class="lomo-name row-name">Recently Added</h2>
-                              <a href="#left" class="is-gutter paginate-lomo-left">Previous Titles</a>
                               <div class="lomo has-inline-right-gutter">
 
                               </div>
-                              <a href="#right" class="is-gutter paginate-lomo-right">Next Titles</a>
                           </div>
                           <div class="single-row-lomo has-inline-left-gutter">
                               <h2 class="lomo-name row-name">Trending Now</h2>
-                              <a href="#left" class="is-gutter paginate-lomo-left">Previous Titles</a>
                               <div class="lomo has-inline-right-gutter">
 
                               </div>
-                              <a href="#right" class="is-gutter paginate-lomo-right">Next Titles</a>
                           </div>
                       </div>
                   </div>
@@ -491,6 +493,8 @@
                       </ol>
                   </div>
               </div>
+
+              <script src="http://vjs.zencdn.net/5.11.8/video.js"></script>
 
 
       </body>
